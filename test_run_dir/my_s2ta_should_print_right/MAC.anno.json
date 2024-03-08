@@ -1,0 +1,29 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/my_s2ta_should_print_right/MAC.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MAC|MAC>io_debug",
+    "sources":[
+      "~MAC|MAC>io_d_state",
+      "~MAC|MAC>io_buffer"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MAC|MAC>io_o_out",
+    "sources":[
+      "~MAC|MAC>io_buffer"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/my_s2ta_should_print_right"
+  }
+]
