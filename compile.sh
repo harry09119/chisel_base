@@ -7,8 +7,6 @@ today="$(date +"%Y/%m/%d")"
 package=uvp_array
 testname=TMP_Test
 
-branch=recent
-
 sbt testOnly $package.$testname
 
 echo "Add"
