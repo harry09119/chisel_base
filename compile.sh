@@ -16,5 +16,10 @@ sbt testOnly $package.$testname
 
 echo "Add"
 git add . 
+
 echo "Commit"
 git commit -m $today -a
+
+echo "Push"
+git push origin master
+#expect
