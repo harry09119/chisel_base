@@ -2,6 +2,9 @@
 
 echo "Running SBT"
 
+id="harry09119"
+token="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"
+
 today=$(date +"%Y/%m/%d - %H:%M:%S")
 
 package=uvp_array
@@ -11,6 +14,7 @@ branch=recent
 
 sbt testOnly $package.$testname
 
-git add .
+echo "Add"
+git add . 
+echo "commit"
 git commit -m today
-git push origin master
