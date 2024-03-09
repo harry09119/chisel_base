@@ -2,9 +2,6 @@
 
 echo "Running SBT"
 
-id="harry09119"
-token="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"
-
 today="$(date +"%Y/%m/%d")"
 
 package=uvp_array
