@@ -17,4 +17,4 @@ sbt testOnly $package.$testname
 echo "Add"
 git add . 
 echo "Commit"
-git commit -m $today
+git commit -m $today -a
