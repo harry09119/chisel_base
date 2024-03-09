@@ -280,7 +280,7 @@ class TMP_Test extends FlatSpec with ChiselScalatestTester with Matchers {
                                     ).reduce(_ + _)
 
 */
-//HAHAHAHAHAHA
+    println("Complete!")
     }
   }
 }
