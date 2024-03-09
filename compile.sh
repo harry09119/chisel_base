@@ -22,4 +22,7 @@ git commit -m $today -a
 
 echo "Push"
 git push origin master
-#expect
+expect "Username for 'https://github.com:"
+send "$id"
+expect "Password for 'https://harry09119@github.com':"
+send "$token"
