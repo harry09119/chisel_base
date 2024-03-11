@@ -11,7 +11,7 @@ circuit HeadPE :
     io.col_out <= col_ @[my_array.scala 28:14]
     reg out_0 : UInt<20>, clock @[my_array.scala 30:18]
     reg out_1 : UInt<20>, clock @[my_array.scala 31:18]
-    node _T = eq(io.out_index, UInt<1>("h00")) @[my_array.scala 33:21]
+    node _T = eq(io.out_index, UInt<1>("h01")) @[my_array.scala 33:21]
     when _T : @[my_array.scala 33:30]
       io.out_out <= out_0 @[my_array.scala 34:16]
       skip @[my_array.scala 33:30]

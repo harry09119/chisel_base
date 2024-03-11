@@ -25,7 +25,7 @@ circuit HeadPE :
       reset => (UInt<1>("h0"), out_0) @[my_array.scala 30:18]
     reg out_1 : UInt<20>, clock with :
       reset => (UInt<1>("h0"), out_1) @[my_array.scala 31:18]
-    node _T = eq(io_out_index, UInt<1>("h0")) @[my_array.scala 33:21]
+    node _T = eq(io_out_index, UInt<1>("h1")) @[my_array.scala 33:21]
     node _GEN_0 = mux(_T, out_0, out_1) @[my_array.scala 33:30 my_array.scala 34:16 my_array.scala 36:16]
     node _T_1 = eq(io_flow_index, UInt<1>("h0")) @[my_array.scala 41:22]
     node _T_2 = eq(io_flow_index, UInt<1>("h1")) @[my_array.scala 46:28]
