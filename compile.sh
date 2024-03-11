@@ -7,7 +7,7 @@ today="$(date +"%Y/%m/%d")"
 package=uvp_array
 testname=TMP_Test
 
-sbt testOnly $package.$testname
+sbt testOnly $package:$testname
 
 echo "Add"
 git add . 
