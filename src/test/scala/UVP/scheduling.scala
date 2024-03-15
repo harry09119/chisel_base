@@ -194,12 +194,27 @@ class TMP_Test extends FlatSpec with ChiselScalatestTester with Matchers {
 
         println("\n[All Inp]:"+all_input_index)
 
-        var input_expire_date = mutable.ListBuffer.fill(all_input_index.length)(0)
+        var input_expire_date = mutable.ListBuffer[Int]()//.fill(all_input_index.length)(0)
         var stalled_avp_index = Array.ofDim[Int](tile_num, tile_sizes(tile_num - 1))
-        
-//        for ( ) {
-//          
-//        }
+        var tile_indexs = mutable.ListBuffer.fill(tile_num)(0)
+
+        var skip = 0
+
+        for (cycle <- 0 until all_input_index.length - global_size ) {
+          var global_next = for (i <- cycle until cycle+global_size) yield all_inp_index(i)
+          var tile_sample = for (tile <- 0 until tile_num) yield packed_avp_index(tile)(tile_index(tile))
+
+          var 
+          for (tile <- 0 until tile_num) {
+            if(global_nex.contains(tile_sample(tile)))
+              tile_sample(tile) = tile_sample(tile) + 1
+            else {
+              for( g <- 0 until global_size ) {
+                
+              }
+            }
+          }
+        }
 
         var reshape_input_index = mutable.ListBuffer[Int]()
 /*
