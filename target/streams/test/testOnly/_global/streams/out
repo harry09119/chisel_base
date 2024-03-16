@@ -1,33 +1,38 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@160b70e6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@160b70e6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@160b70e6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@160b70e6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@160b70e6, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mBaseTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mBase[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test2, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@5f2aea2, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test2:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTMP_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBaseTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBase[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mPEGroup_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 852 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 980 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 6[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 5, Failed 0, Errors 0, Passed 5[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 6, Failed 0, Errors 0, Passed 6[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PEGroup_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PE_Test2[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.TMP_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.HeadPE_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PE_Test[0m

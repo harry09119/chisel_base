@@ -1,4 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/UVP/my_array.scala:179:34: value row_out is not a member of uvp_array.PE[0m
-[0m[[0m[31merror[0m] [0m[0m      io.row_out(i) := body(i-1).row_out[0m
-[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/S2TA/array.scala:18:26: not found: value mux_size[0m
+[0m[[0m[31merror[0m] [0m[0m    val tag = Input(UInt(mux_size.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/S2TA/array.scala:50:26: value * is not a member of chisel3.Vec[chisel3.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m      out_0 := io.col_in * io.row_in + out_0[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/S2TA/array.scala:53:26: value * is not a member of chisel3.Vec[chisel3.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m      out_1 := io.col_in * io.row_in + out_1[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/S2TA/array.scala:61:26: value * is not a member of chisel3.Vec[chisel3.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m      out_0 := io.col_in * io.row_in + out_0[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/main/scala/S2TA/array.scala:64:26: value * is not a member of chisel3.Vec[chisel3.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m      out_1 := io.col_in * io.row_in + out_1[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m

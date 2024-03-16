@@ -194,29 +194,55 @@ class TMP_Test extends FlatSpec with ChiselScalatestTester with Matchers {
 
         println("\n[All Inp]:"+all_input_index)
 
-        var input_expire_date = mutable.ListBuffer[Int]()//.fill(all_input_index.length)(0)
-        var stalled_avp_index = Array.ofDim[Int](tile_num, tile_sizes(tile_num - 1))
-        var tile_indexs = mutable.ListBuffer.fill(tile_num)(0)
+        var skip_inp_index = Array.ofDim[Int](all_input_index.length - global_size, global_size)
+        var stall_tile_index = for (i <- 0 until tile_num) yield mutable.ListBuffer[Int]()
 
-        var skip = 0
+        var tile_index = mutable.ListBuffer.fill(tile_num)(0)
 
         for (cycle <- 0 until all_input_index.length - global_size ) {
-          var global_next = for (i <- cycle until cycle+global_size) yield all_inp_index(i)
-          var tile_sample = for (tile <- 0 until tile_num) yield packed_avp_index(tile)(tile_index(tile))
+          var global_regs = mutable.ListBuffer[Int]()
+          for (i <- cycle until cycle+global_size) 
+            global_regs += all_input_index(i)
 
-          var 
+          var tile_now = for (tile <- 0 until tile_num) yield packed_avp_index(tile)(tile_index(tile))
+          var stall = false
+
           for (tile <- 0 until tile_num) {
-            if(global_nex.contains(tile_sample(tile)))
-              tile_sample(tile) = tile_sample(tile) + 1
-            else {
-              for( g <- 0 until global_size ) {
-                
+            if(!global_regs.contains(tile_now(tile)))
+              stall = true
+          }
+
+          if(stall) {
+            var stop = false
+            var look = 0
+            while(stop==false) {
+              var skip = false
+              for(tile <- 0 until tile_num) {
+                var tile_next = for (i <- tile_index(tile) + 1 until tile_sizes(tile)) yield packed_avp_index(tile)(i)
+                if(!tile_next.contains(global_regs(look)) && stop == false) {
+                  skip = true
+                }
+                else {
+                  stop = true
+                }
+              }
+
+              if(skip) {
+                for(i <- look until global_size - 1) {
+                  global_regs(i) = global_regs(i + 1)
+                }
+               look = look + 1
               }
             }
           }
+
+          for(i <- 0 until global_regs.length) {
+            skip_inp_index(cycle)(i) = global_regs(i)
+          }
         }
 
-        var reshape_input_index = mutable.ListBuffer[Int]()
+        print(skip_inp_index)
+
 /*
         var tile_stall = List.fill(tile_num)(0)//for (t <- 0 until tile_num) yield 0
         println(tile_stall)
