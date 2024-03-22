@@ -198,50 +198,63 @@ class TMP_Test extends FlatSpec with ChiselScalatestTester with Matchers {
         var stall_tile_index = for (i <- 0 until tile_num) yield mutable.ListBuffer[Int]()
 
         var tile_index = mutable.ListBuffer.fill(tile_num)(0)
-
+        var skips = 0
         for (cycle <- 0 until all_input_index.length - global_size ) {
           var global_regs = mutable.ListBuffer[Int]()
-          for (i <- cycle until cycle+global_size) 
-            global_regs += all_input_index(i)
+          if(cycle+global_size+skips <  all_input_index.length - global_size) {
+            for (i <- cycle+skips until cycle+global_size+skips) 
+              global_regs += all_input_index(i)
+            println("G:"+global_regs)
+            var tile_now = for (tile <- 0 until tile_num) yield packed_avp_index(tile)(tile_index(tile))
+            println("T:"+tile_now)
+            var stall = false
 
-          var tile_now = for (tile <- 0 until tile_num) yield packed_avp_index(tile)(tile_index(tile))
-          var stall = false
+            for (tile <- 0 until tile_num) {
+              if(!global_regs.contains(tile_now(tile)))
+                stall = true
+              else
+                tile_index(tile) = tile_index(tile) + 1
+            }
 
-          for (tile <- 0 until tile_num) {
-            if(!global_regs.contains(tile_now(tile)))
-              stall = true
-          }
-
-          if(stall) {
-            var stop = false
-            var look = 0
-            while(stop==false) {
-              var skip = false
-              for(tile <- 0 until tile_num) {
-                var tile_next = for (i <- tile_index(tile) + 1 until tile_sizes(tile)) yield packed_avp_index(tile)(i)
-                if(!tile_next.contains(global_regs(look)) && stop == false) {
-                  skip = true
+            if(stall) {
+              var stop = false
+              var look = 0
+              while(stop==false) {
+                var skip = false
+                for(tile <- 0 until tile_num) {
+                  var tile_next = for (i <- tile_index(tile) + 1 until tile_sizes(tile)) yield packed_avp_index(tile)(i)
+                  if(!tile_next.contains(global_regs(look)) && stop == false) {
+                    skip = true
+                  }
+                  else {
+                    stop = true
+                  }
                 }
-                else {
-                  stop = true
-                }
-              }
 
-              if(skip) {
-                for(i <- look until global_size - 1) {
-                  global_regs(i) = global_regs(i + 1)
+                if(skip && !stop) {
+                  for(i <- look until global_size - 1) {
+                    global_regs(i) = global_regs(i + 1)
+                  }
+                  global_regs(global_size - 1) = all_input_index(cycle+global_size+skips)
+                  look = look + 1
+                  skips = skips  + 1
                 }
-               look = look + 1
               }
             }
-          }
 
-          for(i <- 0 until global_regs.length) {
-            skip_inp_index(cycle)(i) = global_regs(i)
+            println("G2:"+global_regs)
+            for(i <- 0 until global_regs.length) {
+              skip_inp_index(cycle)(i) = global_regs(i)
+            }
           }
         }
 
-        print(skip_inp_index)
+        for(i <- 0 until all_input_index.length - global_size) {
+          println("\n")
+          for (j <- 0 until global_size) {
+            print(skip_inp_index(i)(j)+",")
+          }
+        }
 
 /*
         var tile_stall = List.fill(tile_num)(0)//for (t <- 0 until tile_num) yield 0
