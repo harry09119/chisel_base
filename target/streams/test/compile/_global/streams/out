@@ -1,13 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/test/scala/SADVES/General_PE_Test.scala:43:28: not found: value row_in[0m
-[0m[[0m[31merror[0m] [0m[0m          c.io.col_in.poke(row_in(Mat_A(i)).asUInt(8.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/test/scala/SADVES/General_PE_Test.scala:44:28: not found: value col_in[0m
-[0m[[0m[31merror[0m] [0m[0m          c.io.row_in.poke(col_in(Mat_B(i)).asUInt(8.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/test/scala/SADVES/General_PE_Test.scala:45:49: no arguments allowed for nullary macro method asUInt: ()chisel3.UInt[0m
 [0m[[0m[31merror[0m] [0m[0m          c.io.out_ctrl.poke(o_ctrl(i).asUInt(1.W))[0m
 [0m[[0m[31merror[0m] [0m[0m                                                ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/harry09119/my_chisel_base/src/test/scala/SADVES/General_PE_Test.scala:51:21: not found: value i[0m
 [0m[[0m[31merror[0m] [0m[0m        println("["+i+"]:"+c.io.debug(0).peek()+"|"+c.io.debug(1).peek())[0m
 [0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
