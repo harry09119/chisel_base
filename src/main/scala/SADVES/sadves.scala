@@ -66,7 +66,7 @@ class General_PE() extends Module {
       out1 := out1
     }.otherwise {
       out1 := io.out_in
-      out0 := out_0
+      out0 := out0
     }
   }
   //debug
