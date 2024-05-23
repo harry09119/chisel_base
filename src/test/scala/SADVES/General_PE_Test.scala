@@ -48,7 +48,7 @@ class General_PE_Test extends FlatSpec with ChiselScalatestTester with Matchers 
          
         }
         // Read HW's Outputs with "print(c.io.<HW OUTPUT PORT NAME>.peek())"
-        println("["+i+"]:"+c.io.debug(0).peek()+"|"+c.io.debug(1).peek())
+        println("Real Out[0]:"+c.io.debug(0).peek()+" | Out[1]:"+c.io.debug(1).peek())
 
     }
   }
