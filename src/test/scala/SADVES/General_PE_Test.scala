@@ -42,7 +42,7 @@ class General_PE_Test extends FlatSpec with ChiselScalatestTester with Matchers 
         for(i <- 0 to 15) {
           c.io.col_in.poke(Mat_A(i).asUInt(8.W))
           c.io.row_in.poke(Mat_B(i).asUInt(8.W))
-          c.io.out_ctrl.poke(o_ctrl(i).asUInt(1.W))
+          c.io.out_ctrl.poke(o_ctrl(i).asUInt)
           c.clock.step(1)
           //println("["+i+"]:"+c.io.debug(0).peek()+"|"+c.io.debug(1).peek())
          
