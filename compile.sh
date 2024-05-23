@@ -3,9 +3,9 @@
 echo "Running SBT"
 
 today="$(date +"%Y/%m/%d")"
-uvp_array.TMP_Test
-package=uvp_array
-testname=TMP_Test
+
+package=sadves
+testname=General_PE_Test
 
 sbt testOnly $package.$testname
 
