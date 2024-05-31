@@ -1,58 +1,64 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.General_PE_Test, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test2, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@264d3a6e, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE_Test:[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Head_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.AVP_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test2, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Column_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Group_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.General_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test2:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should produce right output *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.IndexOutOfBoundsException: 15[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:131)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Vector.apply(Vector.scala:122)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at sadves.General_PE_Test.$anonfun$new$10(General_PE_Test.scala:43)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:158)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at sadves.General_PE_Test.$anonfun$new$3(General_PE_Test.scala:42)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at sadves.General_PE_Test.$anonfun$new$3$adapted(General_PE_Test.scala:15)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.backends.treadle.TreadleBackend.$anonfun$run$1(TreadleBackend.scala:152)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.internal.ThreadedBackend$TesterThread$$anon$1.$anonfun$run$1(ThreadedBackend.scala:507)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.backends.treadle.TreadleBackend.doTimescope(TreadleBackend.scala:109)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.internal.ThreadedBackend$TesterThread$$anon$1.run(ThreadedBackend.scala:507)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBaseTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBase[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test2:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTMP_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mPEGroup_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAVP_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAVP Matrix[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGroup_PE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mColumn_PE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mColumn_PE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 400 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 7[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 7, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
-[0m[[0m[31merror[0m] [0m[0mFailed: Total 7, Failed 1, Errors 0, Passed 6[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 84 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 11, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 11, Failed 0, Errors 0, Passed 11[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PEGroup_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sadves.AVP_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PE_Test2[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.TMP_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sadves.Column_PE_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sadves.General_PE_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.HeadPE_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	uvp_array.PE_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sadves.Group_PE_Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sadves.Head_PE_Test[0m
 [0m[[0m[0mdebug[0m] [0m[0m	base.BaseTest[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	sadves.General_PE_Test[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

@@ -18,8 +18,9 @@ class General_PE_Test extends FlatSpec with ChiselScalatestTester with Matchers 
         val Mat_B = for(i <- 0 until 15) yield i
         
         val rand = new scala.util.Random
-        val o_ctrl = for(i <- 0 until 15) yield rand.nextInt(1).U
-        
+        val o_ctrl = for(i <- 0 until 15) yield rand.nextInt(2)
+        println(o_ctrl)
+
         var out0 = 0
         var out1 = 0
         var mul = 0
@@ -30,22 +31,22 @@ class General_PE_Test extends FlatSpec with ChiselScalatestTester with Matchers 
           else
             out1 = out1 + mul
         }
-        println("O[0]:"+out0+":"+"O[1]:"+out1)
+        println("[0]:"+out0+" | "+"[1]:"+out1)
 
         //Reset Register
         c.io.flow_ctrl.poke(0.U(2.W))
         c.clock.step(1)
-        c.io.flow_ctrl.poke(1.U(2.W))
+        c.io.flow_ctrl.poke(2.U(2.W))
         c.clock.step(1)
 
         // Send Data
-        for(i <- 0 to 15) {
+        c.io.out_in.poke(0.U)
+        for(i <- 0 until 15) {
           c.io.col_in.poke(Mat_A(i).asUInt(8.W))
           c.io.row_in.poke(Mat_B(i).asUInt(8.W))
           c.io.out_ctrl.poke(o_ctrl(i).asUInt)
           c.clock.step(1)
           //println("["+i+"]:"+c.io.debug(0).peek()+"|"+c.io.debug(1).peek())
-         
         }
         // Read HW's Outputs with "print(c.io.<HW OUTPUT PORT NAME>.peek())"
         println("Real Out[0]:"+c.io.debug(0).peek()+" | Out[1]:"+c.io.debug(1).peek())
