@@ -1,50 +1,50 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Head_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.AVP_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test2, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Column_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Group_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.General_PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@6402172a, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test2:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mBaseTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mBase[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test2, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.HeadPE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.AVP_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Column_PE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Head_PE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(base.BaseTest, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.TMP_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uvp_array.PEGroup_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.General_PE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(sadves.Group_PE_Test, org.scalatest.tools.Framework$$anon$1@4705f16a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mTMP_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHead_PE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mPEGroup_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAVP_Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAVP Matrix[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPE_Test2:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGeneral_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGroup_PE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHead_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mColumn_PE_Test:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mColumn_PE[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAVP_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAVP Matrix[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTMP_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBaseTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBase[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPEGroup_Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHeadPE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce right output[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 84 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 4 seconds, 45 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 11, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
